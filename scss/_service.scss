@@ -7,6 +7,9 @@
     .title{
         @include title($margin-p);
         margin-bottom: 77px;
+        h2{
+            margin-left: 3px
+        }
     }
 }
 

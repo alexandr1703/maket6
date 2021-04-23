@@ -4464,6 +4464,35 @@ textarea.form-control {
     .form-inline .custom-control-label {
       margin-bottom: 0; } }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  width: 100vw; }
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  color: #fff; }
+
+.container {
+  max-width: 1140px; }
+
+.btn {
+  width: 293px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .btn p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    letter-spacing: 0.31px;
+    color: #fff; }
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -6628,6 +6657,8 @@ header {
       margin-top: 16px;
       text-align: center;
       letter-spacing: 0.4px; }
+    #service .title h2 {
+      margin-left: 3px; }
 
 .service__row .service__col {
   display: flex;
@@ -6756,6 +6787,14 @@ header {
     border-radius: 50%;
     width: 32px;
     height: 32px; }
+    .team__row .team__col .icon i .fa-facebook-f::before {
+      top: 8px;
+      position: relative;
+      left: 11px; }
+    .team__row .team__col .icon i .fa-envelope::before {
+      position: relative;
+      top: -1px;
+      left: -1px; }
 
 .team__col1 {
   padding: 0 0px 0 15px; }
@@ -7314,32 +7353,3 @@ footer {
     .social a {
       font-size: 32px;
       line-height: 36px; } }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
-html {
-  width: 100vw; }
-
-body {
-  font-family: 'Titillium Web', sans-serif;
-  color: #fff; }
-
-.container {
-  max-width: 1140px; }
-
-.btn {
-  width: 293px;
-  height: 70px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .btn p {
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 600;
-    letter-spacing: 0.31px;
-    color: #fff; }

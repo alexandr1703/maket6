@@ -9,7 +9,7 @@
 @import '../node_modules/bootstrap/scss/dropdown';
 @import '../node_modules/bootstrap/scss/forms';
 @import 'variables-mixin';
-@import 'header', 'service', 'team', 'skill', 'portfolio', 'about', 'contact', 'footer', 'mobile';
+
 
 *{
     padding: 0;
@@ -41,3 +41,4 @@ body{
         color: $white;
     }
 }
+@import 'header', 'service', 'team', 'skill', 'portfolio', 'about', 'contact', 'footer', 'mobile';
