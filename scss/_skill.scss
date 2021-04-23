@@ -1,0 +1,33 @@
+@import 'variables-mixin';
+#skill{
+    padding-top: 115px;
+    padding-bottom: 123px;
+    .title{
+        @include title($margin-p);
+        color: $gray;
+        margin-bottom: 84px;
+    }
+}
+.skill-row{
+    margin-right: 11px;
+    margin-left: 10px;
+    .skill-col{
+        padding: 0 25px;
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+        .ls{
+            padding-left: 1px;
+        }
+        h4{
+            color: $gray;
+            font-size: 24px;
+            line-height: 18px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 31px;
+            letter-spacing: 0.3px;
+        }
+    }
+}

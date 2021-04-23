@@ -1,0 +1,60 @@
+@import 'variables-mixin';
+#about{
+    background: $bgabout;
+    padding-top: 118px;
+    padding-bottom: 54px;
+    .title{
+        @include title($margin-p);
+       
+    }
+}
+.about__row{
+    padding: 0 0 0 6px;
+    .about__col{
+        display: flex;
+        margin-bottom: 73px;
+        margin-top: 67px;
+        img{
+            border-radius: 50%;
+            width: 96px;
+            height: 96px;
+            margin-right: 49px;
+        }
+        .text{
+            .citata{
+                font-size: 21px;
+                line-height: 31px;
+                font-weight: 400;
+                font-style: italic;
+                padding: 4px 23px 0 0;
+                letter-spacing: 0.73px;
+            }
+            h4{
+                font-size: 24px;
+                line-height: 18px;
+                font-weight: 700;
+                letter-spacing: 0.4px;
+                margin: 25px 0 6px -1px;
+            }
+            .prof{
+                font-size: 18px;
+                line-height: 26px;
+                font-weight: 400;
+                color: $bgportfolio;
+                letter-spacing: 0.4px;
+            }
+        }
+        &:nth-child(even){
+            padding-left: 36px;
+            .citata{
+                padding-right: 0px;
+            }
+
+        }
+        &:nth-child(4){
+            img{
+                margin-right: 46px;
+            }
+        }
+    }
+}

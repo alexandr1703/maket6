@@ -1,0 +1,97 @@
+@import 'variables-mixin';
+
+#team{
+    background-color: #e7f1f8;
+    padding-top: 118px;
+    padding-bottom: 127px;
+    .title{
+        @include title(20px);
+        color: $gray;
+        margin-bottom: 77px
+    }
+}
+.team__row{
+    .team__col{
+        img{
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+            max-width: 200px;
+            height: auto;
+        }
+        h4{
+            color: $gray;
+            text-align: center;
+            margin-top: 41px;
+            margin-bottom: 11px;
+            font-size: 24px;
+            line-height: 18px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .prof{
+            color: $blue;
+            text-align: center;
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 400;
+            margin-bottom: 21px;
+            letter-spacing: 0.5px;
+        
+        }
+        .about{
+            color: $gray;
+            text-align: center;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 300;
+            margin-bottom: 27px;
+        }
+        .icon{
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            i{
+                margin: 0 6px;
+                background: #bdd1df;
+                padding: 9px 0 0 9px;
+                border-radius: 50%;
+                width: 32px;
+                height: 32px;
+            }
+            
+        }
+    }
+}
+.team__col1{
+    padding: 0 0px 0 15px;
+    .about{
+        padding: 0 38px 0 37px;
+        letter-spacing: 0.15px;
+    }
+}
+.team__col2{
+    padding: 0 0 0 5px;
+    .about{
+        padding: 2px 39px 0 39px;
+        letter-spacing: 0.3px;
+    }
+}
+.team__col3{
+    padding: 0 5px 0 0px;
+    .about{
+        padding: 2px 34px 0 36px;
+        letter-spacing: 0.4px;
+    }
+}
+.team__col4{
+    padding: 0 15px 0 0;
+    & > p,h4{
+        padding: 0px 0px 0 15px;
+    }
+    .about{
+        padding: 2px 31px 0 41px;
+        letter-spacing: 0.2px;
+    }
+    
+}

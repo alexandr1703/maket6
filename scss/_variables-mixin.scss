@@ -1,0 +1,54 @@
+$white:#fff;
+$blue:#30bae7;
+$bgheader:#87509c;
+$gray:#3c4761;
+$margin-p:16px;
+$color__portfolio: #393939;
+$bgportfolio: #ffdd99;
+$bgabout:#d74680;
+$bgcontact:#3c5499;
+$bgform:#273a71;
+$bgfooter:#344b8e;
+
+@mixin title($margin-p){
+    h2{
+        font-size: 40px;
+        line-height: 29px;
+        font-weight: 700;
+        margin-bottom: 22px;
+        text-align: center;
+        letter-spacing: 4px;
+        margin-left: 4px;
+    }
+    hr{
+        width: 87px;
+        height: 5px;
+        opacity: 0.14;
+        background-color: #000000;
+        margin: 0 auto;
+    }
+    p{
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+        margin-top: $margin-p;
+        text-align: center;
+        letter-spacing: 0.4px;
+    }
+}
+@mixin bt-border($white){
+    border-bottom: 4px solid $white;
+}
+
+@mixin media__title{
+    .title{
+        h2{
+            line-height: 40px;
+            font-size: 32px;
+            padding: 0 10px;
+        }
+        p{
+            padding: 0 15px;
+        }
+    }
+}

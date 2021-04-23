@@ -1,0 +1,57 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import 'variables-mixin';
+header{
+    .navbar{
+        padding: 0 50px;
+    }
+    background: $bgheader;
+    padding-top: 52px;
+    padding-bottom: 145px;
+    .btn__header{
+        background: #eb7d4b;
+        @include bt-border(#c76a3f);
+        &:hover{
+            background: #d85118;
+            border-color: #bb3d08;
+        }
+        
+    }
+    h2{
+        margin-top: 123px;
+        font-size: 42.2px;
+        line-height: 48px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 55px;
+        span{
+            margin-right: 10px;
+        }
+    }
+}
+.logo{
+    padding-left: 11px;
+}
+
+
+.left__menu{
+    justify-content: flex-end;
+    .navbar-nav{
+        padding-bottom: 10px;
+        .nav-item{
+            margin: 0 -20px 0px 32px;
+            padding: 0 8px 0 8px;
+            border-radius: 5px;
+            .nav-link{
+                font-size: 16px;
+                line-height: 18px;
+                font-weight: 400;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $white;
+            }
+        }
+        .nav-item:hover{
+            background: #643a79;
+        }
+    }
+}

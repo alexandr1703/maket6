@@ -1,0 +1,122 @@
+#contact{
+    background: $bgcontact;
+    padding-top: 118px;
+    padding-bottom: 115px;
+    .title{
+        @include title($margin-p);
+        margin-bottom: 50px;
+    }
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 860px;
+    margin: 0 auto;
+   .ta{
+        width: 100%;
+        margin-bottom: 59px;
+        margin-top: 1px;
+        textarea{
+            width: 100%;
+            background: $bgform;
+            border: none;
+            border-radius: 5px;
+            padding: 20px 26px;
+            outline: none;
+            height: 200px;
+            color: $white;
+        }
+    }
+    .name{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .i1, .i2{
+            width: 50%;
+        }
+        .i1{
+            margin-right: 32px;
+        }
+        input{
+            width: 100%;
+            padding: 20px 25px 19px 25px;
+            background: $bgform;
+            border: none;
+            border-radius: 5px;
+            color: $white;
+            outline: none;
+        }
+       
+        
+    }
+    #taa{
+        position: relative;
+        top: 44px;
+        right: -25px;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 400;
+        color: $white;
+        font-family: 'Titillium Web', sans-serif;
+        
+
+        &::after {
+          content: "*";
+          font-family: ArialMT;
+          font-size: 13px;
+          color: #ff4444;
+        }
+    }
+    #i11{
+        position: relative;
+        top: 42px;
+        right: -26px;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 400;
+        color: $white;
+        font-family: 'Titillium Web', sans-serif;
+
+        &::after {
+          content: "*";
+          font-family: 'ArialMT';
+          font-size: 13px;
+          color: #ff4444;
+        }
+    }
+    #i22{
+        position: relative;
+        top: 42px;
+        right: -25px;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 400;
+        color: $white;
+        font-family: 'Titillium Web', sans-serif;
+
+        &::after {
+          content: "*";
+          font-family: 'ArialMT';
+          font-size: 13px;
+          color: #ff4444;
+        }
+    }
+}
+.form__btn{
+    background: #30bae7;
+    @include bt-border(#289ec4);
+    &:hover{
+        background: #1ea4d1;
+        border-color: #157290;
+    }
+}
+input:focus>label{
+    display: none;
+    
+    
+}
+.labelfocus{
+    visibility: hidden;
+}

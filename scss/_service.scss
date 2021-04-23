@@ -1,0 +1,89 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import 'variables-mixin';
+#service{
+    background-color: #17c2a4;
+    padding-top: 118px;
+    padding-bottom: 126px;
+    .title{
+        @include title($margin-p);
+        margin-bottom: 77px;
+    }
+}
+
+.service__row{
+    .service__col{
+        display: flex;
+        flex-direction: column;
+        h4{
+            font-size: 24px;
+            line-height: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 22px;
+            letter-spacing: 0.4px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 300;
+            text-align: center;
+            letter-spacing: 0.2px;
+        }
+        &:nth-child(1){
+            p{
+                padding: 0 13px 0 28px;
+            }
+            h4{
+                padding-left: 13px;
+            }
+        }
+        &:nth-child(2){
+            p{
+                padding: 0 38px 0 43px;
+                letter-spacing: 0.2px;
+            }
+            h4{
+                padding: 0 0px 0 5px;
+
+            }
+        }
+        &:nth-child(3){
+            p{
+                padding: 0 33px 0 25px;;
+                letter-spacing: 0.2px;
+            }
+            h4{
+                padding-right: 7px;
+
+            }
+        }
+        &:nth-child(4){
+            p{
+                padding: 0 36px 0 21px;
+                letter-spacing: 0.2px;
+            }
+            h4{
+                padding-right: 17px;
+
+            }
+        }
+    }
+}
+.serv1{
+    padding: 5px 0 0 26px;
+    margin: 0 auto 61px;
+
+}
+.serv2{
+    padding: 0 0 0 14px;
+    margin: 0 auto 59px;
+}
+.serv3{
+    padding: 5px 15px 0 0px;
+    margin: 0 auto 59px;
+}
+.serv4{
+    padding: 1px 20px 0 0;
+    margin: 0 auto 55px;
+}
